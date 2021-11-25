@@ -17,7 +17,7 @@ class CategoryController extends Controller
     {
         $categories=Category::all();
 
-        return [CategoryResource::toArray($categories)];
+        return CategoryResource::toArray($categories);
     }
 
     /**
